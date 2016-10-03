@@ -1,0 +1,14 @@
+# Setup
+
+* Launch your venv or whatever.
+* Install circuits, ideally from github.
+* Run websocket.py
+* Connect to localhost:8000 via HTML5 capable browser
+* Run tests
+
+# Tests
+
+## Too large payloads
+
+Currently, sending payloads of less than 12 iterations should be echoed back.
+Setting it to send more than ~4kB of data will cause the packet to be discarded somehow.
